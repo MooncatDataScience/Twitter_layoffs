@@ -11,9 +11,19 @@
 5. 使用 XGBoost 分類器進行了訓練和預測，並比較了所有分類器的性能表現，使用 accuracy、precision、recall 和 F1 score 作為評估指標。
 
 ### 結論
-在本次實驗中，我們發現 CountVectorizer 特徵提取器與 XGBoost 分類器結合的模型具有較好的性能表現，取得了最高的準確率和 F1 score。
+在本次實驗中，我們發現 CountVectorizer 特徵提取器與 LogisticRegression 分類器結合的模型具有較好的性能表現，取得了最高的準確率和 F1 score。
 
 因此，在實際應用中，我們可以根據文本數據的特性選擇最適合的特徵提取器和分類器，以達到最佳的文本分類效果。
+
+Vectorizer              Classifier  Accuracy  Precision    Recall  F1 score
+0  CountVectorizer           MultinomialNB  0.609107   0.651842  0.609107  0.585572
+1  CountVectorizer      LogisticRegression  0.720790   0.719501  0.720790  0.713198
+2  CountVectorizer               LinearSVC  0.716495   0.712330  0.716495  0.710982
+3  CountVectorizer  RandomForestClassifier  0.593643   0.598203  0.593643  0.562949
+4  TfidfVectorizer           MultinomialNB  0.505584   0.685638  0.505584  0.436365
+5  TfidfVectorizer      LogisticRegression  0.692010   0.703428  0.692010  0.672345
+6  TfidfVectorizer               LinearSVC  0.737973   0.735184  0.737973  0.730016
+7  TfidfVectorizer  RandomForestClassifier  0.597938   0.632584  0.597938  0.554677
 
 ---
 
