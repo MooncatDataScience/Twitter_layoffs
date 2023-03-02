@@ -14,3 +14,22 @@
 在本次實驗中，我們發現 CountVectorizer 特徵提取器與 XGBoost 分類器結合的模型具有較好的性能表現，取得了最高的準確率和 F1 score。
 
 因此，在實際應用中，我們可以根據文本數據的特性選擇最適合的特徵提取器和分類器，以達到最佳的文本分類效果。
+
+---
+
+EDA_Analysis.ipynb : 做EDA分析
+
+tes.ipynb :　寫一些測試
+
+labeled_tweets.csv　: 文本特徵
+
+tweets.csv : 初始csv
+
+ML_classification.py : 使用貝氏分類
+
+ML_labeled_tweets : 使用LDA將文本分成1~5的分類
+
+ML_xgboost :　使用xgboost
+
+NLTK : 使用NLTK+bert來訓練(尚未完成)
+
