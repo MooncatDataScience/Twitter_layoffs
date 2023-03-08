@@ -28,7 +28,7 @@ labeled_tweets.csv　: 文本特徵
 
 tweets.csv : 初始csv
 
-ML_classification.py : 使用貝氏分類
+ML_classification.py : 使用多個分類器進行了訓練和預測
 
 ML_labeled_tweets : 使用LDA將文本分成1~5的分類
 
